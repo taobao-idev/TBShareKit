@@ -1,0 +1,26 @@
+//
+// Prefix header for all source files of the 'ShareKit' target in the 'ShareKit' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import <netinet/in.h>
+#endif
+
+// 判断是否为 iPad
+#define IS_RUN_IN_IPAD()  (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+// Debug 模式定义了 DEBUG_MODE=1
+// 在 GCC_PREPROCESSOR_DEFINITIONS 中定义
+#ifdef DEBUG_MODE
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+
+#define kKeychainAccount       @"account"
+#define kKeychainAccessKey        @"accessKey"
+#define kKeychainAccessSecret        @"accessSecret"
+#define kKeychainSessionHandle      @"sessionHandle"
