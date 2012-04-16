@@ -164,6 +164,10 @@
 		6A6C947114E8EC870077EF0E /* SBUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C946514E8EC870077EF0E /* SBUTF8Stream.m */; };
 		891D2661134488F5002035DA /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 891D2660134488F5002035DA /* NSData+AES.m */; };
 		891D26AD13448B4D002035DA /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 891D2660134488F5002035DA /* NSData+AES.m */; };
+		894E0967153C0B6600343BC6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E0963153C0B6600343BC6 /* Reachability.m */; };
+		894E0968153C0B6600343BC6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E0963153C0B6600343BC6 /* Reachability.m */; };
+		894E0969153C0B6600343BC6 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E0966153C0B6600343BC6 /* SFHFKeychainUtils.m */; };
+		894E096A153C0B6600343BC6 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E0966153C0B6600343BC6 /* SFHFKeychainUtils.m */; };
 		FACE0E4912C9A8E6003925C9 /* SHKOAuthSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = FACE0DB912C9A8E6003925C9 /* SHKOAuthSharer.m */; };
 		FACE0E4B12C9A8E6003925C9 /* SHKSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = FACE0DBB12C9A8E6003925C9 /* SHKSharer.m */; };
 		FACE0E4D12C9A8E6003925C9 /* TSMutableString.m in Sources */ = {isa = PBXBuildFile; fileRef = FACE0DBE12C9A8E6003925C9 /* TSMutableString.m */; };
@@ -313,6 +317,10 @@
 		6A6C946514E8EC870077EF0E /* SBUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBUTF8Stream.m; path = Library/JSON/SBUTF8Stream.m; sourceTree = "<group>"; };
 		891D265F134488F5002035DA /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
 		891D2660134488F5002035DA /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		894E0962153C0B6600343BC6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		894E0963153C0B6600343BC6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		894E0965153C0B6600343BC6 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		894E0966153C0B6600343BC6 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ShareKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ShareKit-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		FACE0DB212C9A8D3003925C9 /* libShareKitLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libShareKitLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACE0DB812C9A8E6003925C9 /* SHKOAuthSharer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKOAuthSharer.h; sourceTree = "<group>"; };
@@ -673,9 +681,31 @@
 		6A9D80E514E8B4970030D4B1 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				894E0961153C0B6600343BC6 /* Reachability */,
+				894E0964153C0B6600343BC6 /* SFHFKeychainUtils */,
 				6A6C93FA14E8EA2B0077EF0E /* JSON */,
 			);
 			name = Library;
+			sourceTree = "<group>";
+		};
+		894E0961153C0B6600343BC6 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				894E0962153C0B6600343BC6 /* Reachability.h */,
+				894E0963153C0B6600343BC6 /* Reachability.m */,
+			);
+			name = Reachability;
+			path = Library/Reachability;
+			sourceTree = "<group>";
+		};
+		894E0964153C0B6600343BC6 /* SFHFKeychainUtils */ = {
+			isa = PBXGroup;
+			children = (
+				894E0965153C0B6600343BC6 /* SFHFKeychainUtils.h */,
+				894E0966153C0B6600343BC6 /* SFHFKeychainUtils.m */,
+			);
+			name = SFHFKeychainUtils;
+			path = Library/SFHFKeychainUtils;
 			sourceTree = "<group>";
 		};
 		FACE0DB512C9A8E6003925C9 /* ShareKit */ = {
@@ -1150,6 +1180,8 @@
 				6A6C947014E8EC870077EF0E /* SBJsonWriter.m in Sources */,
 				6A6C947114E8EC870077EF0E /* SBUTF8Stream.m in Sources */,
 				6A38192D14EB4C0E003882CE /* UIImage+ImageWithName.m in Sources */,
+				894E0968153C0B6600343BC6 /* Reachability.m in Sources */,
+				894E096A153C0B6600343BC6 /* SFHFKeychainUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1211,6 +1243,8 @@
 				22E78C9D142A2270008DC018 /* OAToken.m in Sources */,
 				22B30E03142B09D400EAF16C /* SHKRenRen.m in Sources */,
 				6A38192C14EB4C0E003882CE /* UIImage+ImageWithName.m in Sources */,
+				894E0967153C0B6600343BC6 /* Reachability.m in Sources */,
+				894E0969153C0B6600343BC6 /* SFHFKeychainUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
